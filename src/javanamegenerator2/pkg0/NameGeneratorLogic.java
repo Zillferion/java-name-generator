@@ -40,16 +40,24 @@ public class NameGeneratorLogic implements Runnable {
     }
      */
 
-    public void generateName(int length, int amount) {
+    public void generateName(int relations, int length) {
+        Random random = new Random();
+        String startChar = Character.toString((char) (random.nextInt(25) + 97));
+        
+        for(int i = 0; i < length; i++){
+            
+        }
+        /**
         Random random = new Random();
         char[] name = new char[length];
-
+        
         for (int a = 0; a < amount; a++ ) {
-            for (int i = 0; i < length; i++) {
-                name[i] = (char) (random.nextInt(25) + 97);
-            }
-            gui.writeName(new String(name));
+        for (int i = 0; i < length; i++) {
+        name[i] = (char) (random.nextInt(25) + 97);
         }
+        gui.writeName(new String(name));
+        }
+        /**/
     }
 
     @Override

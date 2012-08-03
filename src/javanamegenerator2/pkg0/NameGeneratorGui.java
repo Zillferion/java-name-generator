@@ -308,7 +308,7 @@ public class NameGeneratorGui extends javax.swing.JFrame {
 
             @Override
             public void run() {
-                GuiBean bean = new GuiBean();
+                GuiBean bean = new GuiBean();;
                 NameGeneratorGui gui = new NameGeneratorGui();
                 gui.setVisible(true);
                 gui.setLocationRelativeTo(null);
